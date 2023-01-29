@@ -1,0 +1,19 @@
+.topic-cell {
+  padding: 20px !important;
+}
+.cell {
+  padding-top: 20px !important;
+  text-align: center;
+}
+
+footer {
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+address {
+  margin-left: 50px;
+}
+pre {
+  text-align: center;
+}

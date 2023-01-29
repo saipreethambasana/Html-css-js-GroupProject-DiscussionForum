@@ -1,0 +1,275 @@
+<!-- Authors: Sahit Katta, Vijay Chatrathi, Sai Preetham Basana, Snehita Kodathala -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OCU discussion Forum</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      tr {
+        padding: 25px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg stic bg-light">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#">OCU Discussion Forum</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+            </ul>
+            <form class="d-flex me-2" role="search">
+              <fieldset class="d-flex me-2">
+                <input
+                  class="form-control"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+              </fieldset>
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+            <button
+              class="btn btn-outline-danger"
+              type="button"
+              onclick="signOut()"
+            >
+              Sign Out
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="pt-5 text-left border-bottom">
+        <h1>Discussion Threads</h1>
+      </div>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col" style="width: 60%">Topic</th>
+              <th scope="col" style="text-align: center; width: 20%">
+                Category
+              </th>
+              <th scope="col" style="text-align: center; width: 10%">
+                Replies
+              </th>
+              <th scope="col" style="text-align: center; width: 10%">
+                Activity
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="topic-cell">
+                <h3>Is King Charles Good Enough</h3>
+              </td>
+              <td class="cell">
+                <p><span class="badge bg-secondary">England</span></p>
+              </td>
+              <td class="cell">
+                <p>2</p>
+              </td>
+              <td class="cell">
+                <p>2h</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="topic-cell">
+                <h3>Android v/s iOS!!!</h3>
+              </td>
+              <td class="cell">
+                <p><span class="badge bg-secondary">Mobile</span></p>
+              </td>
+              <td class="cell">
+                <p>211</p>
+              </td>
+              <td class="cell">
+                <p>1d</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="topic-cell">
+                <h3>Is is good to go with React or VueJS</h3>
+              </td>
+              <td class="cell">
+                <p><span class="badge bg-secondary">Frontend</span></p>
+              </td>
+              <td class="cell">
+                <p>2</p>
+              </td>
+              <td class="cell">
+                <p>11d</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="topic-cell">
+                <h3>
+                  Should i start learning in C++ or Java for interview?
+                </h3>
+              </td>
+              <td class="cell">
+                <p><span class="badge bg-secondary">Interviews</span></p>
+              </td>
+              <td class="cell">
+                <p>2</p>
+              </td>
+              <td class="cell">
+                <p>11d</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <br />
+    <hr />
+    <div class="container">
+      <h1>Feedback</h1>
+      <form>
+        <div class="form-group">
+          <textarea class="form-control" placeholder="Drop us your feedback"></textarea>
+          <small id="feedback" class="form-text text-muted">Your feedback matters!</small>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <hr />
+    <footer>
+      <img
+        src="https://www.okcu.edu/images/OCU_logo_horizontal.png"
+        alt="OKCU logo"
+        width="200px"
+        height="auto"
+      />
+      <address style="display: inline-block">
+        <b>Address:</b>
+        <p style="display: inline-block">
+          Oklahoma City University, 2501 N Blackwelder Ave, Oklahoma City, OK
+          <i>73106</i>
+        </p>
+      </address>
+      <div>
+        <embed width="250" height="250" src="https://maps.google.com/maps?q=Oklahoma%20City%20University&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+      </div>
+      <details>
+        <summary>Our Development Team</summary>
+        <pre><u>Members</u><sup> 4</sup>: Sahit, Snehita, Preetham, Vijay. <sub>(project equally discussed and developed by four of us.)</sub></pre>
+      </details>
+    </footer>
+    <dialog open>
+      <blockquote cite="https://www.okcu.edu/">
+        This is the Project dedicated to the students of OCU and Faculty.  
+      </blockquote>
+    </dialog>
+    <select
+      style="float: right; margin-top: 5px"
+      data-placeholder="Choose a Language..."
+    >
+      <option value="AF">Afrikaans</option>
+      <option value="SQ">Albanian</option>
+      <option value="AR">Arabic</option>
+      <option value="HY">Armenian</option>
+      <option value="EU">Basque</option>
+      <option value="BN">Bengali</option>
+      <option value="BG">Bulgarian</option>
+      <option value="CA">Catalan</option>
+      <option value="KM">Cambodian</option>
+      <option value="ZH">Chinese (Mandarin)</option>
+      <option value="HR">Croatian</option>
+      <option value="CS">Czech</option>
+      <option value="DA">Danish</option>
+      <option value="NL">Dutch</option>
+      <option value="EN" selected>English</option>
+      <option value="ET">Estonian</option>
+      <option value="FJ">Fiji</option>
+      <option value="FI">Finnish</option>
+      <option value="FR">French</option>
+      <option value="KA">Georgian</option>
+      <option value="DE">German</option>
+      <option value="EL">Greek</option>
+      <option value="GU">Gujarati</option>
+      <option value="HE">Hebrew</option>
+      <option value="HI">Hindi</option>
+      <option value="HU">Hungarian</option>
+      <option value="IS">Icelandic</option>
+      <option value="ID">Indonesian</option>
+      <option value="GA">Irish</option>
+      <option value="IT">Italian</option>
+      <option value="JA">Japanese</option>
+      <option value="JW">Javanese</option>
+      <option value="KO">Korean</option>
+      <option value="LA">Latin</option>
+      <option value="LV">Latvian</option>
+      <option value="LT">Lithuanian</option>
+      <option value="MK">Macedonian</option>
+      <option value="MS">Malay</option>
+      <option value="ML">Malayalam</option>
+      <option value="MT">Maltese</option>
+      <option value="MI">Maori</option>
+      <option value="MR">Marathi</option>
+      <option value="MN">Mongolian</option>
+      <option value="NE">Nepali</option>
+      <option value="NO">Norwegian</option>
+      <option value="FA">Persian</option>
+      <option value="PL">Polish</option>
+      <option value="PT">Portuguese</option>
+      <option value="PA">Punjabi</option>
+      <option value="QU">Quechua</option>
+      <option value="RO">Romanian</option>
+      <option value="RU">Russian</option>
+      <option value="SM">Samoan</option>
+      <option value="SR">Serbian</option>
+      <option value="SK">Slovak</option>
+      <option value="SL">Slovenian</option>
+      <option value="ES">Spanish</option>
+      <option value="SW">Swahili</option>
+      <option value="SV">Swedish</option>
+      <option value="TA">Tamil</option>
+      <option value="TT">Tatar</option>
+      <option value="TE">Telugu</option>
+      <option value="TH">Thai</option>
+      <option value="BO">Tibetan</option>
+      <option value="TO">Tonga</option>
+      <option value="TR">Turkish</option>
+      <option value="UK">Ukrainian</option>
+      <option value="UR">Urdu</option>
+      <option value="UZ">Uzbek</option>
+      <option value="VI">Vietnamese</option>
+      <option value="CY">Welsh</option>
+      <option value="XH">Xhosa</option>
+    </select>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
